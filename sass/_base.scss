@@ -1,3 +1,33 @@
+// COLOR VARIABLES
+$color-primary: #c69963;
+$color-primary-dark: #b28451;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+
+$shadow-dark: 0rem 2rem 6rem rgba(0, 0, 0, 0.3);
+$shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.1);
+
+// FONT VARIABLES
+$font-primary: "Nunito", sans-serif;
+$font-display: "Josefin Sans", sans-serif;
+
+//RESPONSIVE BREAKPOINT
+$bp-largest: 75em;
+$bp-large: 62.5em;
+$bp-medium: 50em;
+$bp-small: 37.5em;
+$bp-largest: 75em; //1200px
+$bp-large: 68.75em; //1100px
+$bp-medium: 53.125em; //900px
+$bp-medium-small: 37.5em; //600px
+$bp-small: 31.25em; //500px
+
 *,
 *::after,
 *::before {
@@ -7,31 +37,14 @@
 }
 
 html {
-  // This defines what 1rem is
+  box-sizing: border-box;
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
-
-  @include respond(tab-land) {
-    // width < 1200?
-    font-size: 56.25%; //1 rem = 9px, 9/16 = 56.25%
-  }
-
-  @include respond(tab-port) {
-    // width < 900?
-    font-size: 50%; //1 rem = 8px, 8/16 = 50%
-  }
-
-  @include respond(big-desktop) {
-    font-size: 75%; //1rem = 12, 12/16
+  @media only screen and (max-width: $bp-large) {
+    font-size: 58.6%;
   }
 }
 
 body {
-  box-sizing: border-box;
-  // padding: 3rem;
-
-  // @include respond(tab-port) {
-  //     padding: 0;
-  // }
 }
 
 // ::selection {
@@ -101,6 +114,31 @@ body {
 }
 .mb-hg {
   margin-bottom: 8rem;
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important;
+  @include respond(tab-port) {
+    margin-bottom: 6rem !important;
+  }
+}
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
+  @include respond(tab-port) {
+    margin-bottom: 3rem !important;
+  }
+}
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+.u-margin-top-huge {
+  margin-top: 10rem !important;
+}
+.u-margin-top-big {
+  margin-top: 8rem !important;
 }
 ///
 //////////////// UTILITY END //////////////////////
