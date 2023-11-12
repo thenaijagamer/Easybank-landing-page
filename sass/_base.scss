@@ -1,14 +1,12 @@
 // COLOR VARIABLES
-$color-primary: #c69963;
-$color-primary-dark: #b28451;
+$color-primary-1: hsl(233, 26%, 24%); //dark-blue
+$color-primary-2: hsl(136, 65%, 51%); //lime-green
+$color-primary-2: hsl(192, 70%, 51%); //bright-cyan
 
-$color-secondary: #101d2c;
-
-$color-grey-light-1: #f9f7f6;
-$color-grey-light-2: #aaa;
-
-$color-grey-dark-1: #54483a;
-$color-grey-dark-2: #6d5d4b;
+$color-text: hsl(233, 8%, 62%); //grey-blue
+$color-grey-blue-light: hsl(220, 16%, 96%);
+$color-very-light-gray: hsl(0, 0%, 98%);
+$color-white: hsl(0, 0%, 100%);
 
 $shadow-dark: 0rem 2rem 6rem rgba(0, 0, 0, 0.3);
 $shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.1);
@@ -18,15 +16,11 @@ $font-primary: "Nunito", sans-serif;
 $font-display: "Josefin Sans", sans-serif;
 
 //RESPONSIVE BREAKPOINT
-$bp-largest: 75em;
-$bp-large: 62.5em;
-$bp-medium: 50em;
-$bp-small: 37.5em;
-$bp-largest: 75em; //1200px
-$bp-large: 68.75em; //1100px
-$bp-medium: 53.125em; //900px
-$bp-medium-small: 37.5em; //600px
-$bp-small: 31.25em; //500px
+$bp-tab-land: 75em; //1200px
+// $bp-large: 68.75em; //1100px
+$bp-tab-port: 53.125em; //900px
+$bp-phone: 37.5em; //600px
+// $bp-small: 31.25em; //500px
 
 *,
 *::after,
@@ -39,12 +33,14 @@ $bp-small: 31.25em; //500px
 html {
   box-sizing: border-box;
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
-  @media only screen and (max-width: $bp-large) {
-    font-size: 58.6%;
-  }
+  // @media only screen and (max-width: $bp-large) {
+  //   font-size: 58.6%;
+  // }
 }
 
 body {
+  font-size: 1.8rem;
+  color: $color-text;
 }
 
 // ::selection {
@@ -57,6 +53,7 @@ body {
 %heading {
   font-family: $font-display;
   font-weight: 400;
+  color: $color-primary-1;
 }
 
 .heading-1 {
