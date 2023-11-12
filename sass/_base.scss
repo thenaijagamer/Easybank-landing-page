@@ -1,7 +1,7 @@
 // COLOR VARIABLES
 $color-primary-1: hsl(233, 26%, 24%); //dark-blue
 $color-primary-2: hsl(136, 65%, 51%); //lime-green
-$color-primary-2: hsl(192, 70%, 51%); //bright-cyan
+$color-primary-3: hsl(192, 70%, 51%); //bright-cyan
 
 $color-text: hsl(233, 8%, 62%); //grey-blue
 $color-grey-blue-light: hsl(220, 16%, 96%);
@@ -10,10 +10,6 @@ $color-white: hsl(0, 0%, 100%);
 
 $shadow-dark: 0rem 2rem 6rem rgba(0, 0, 0, 0.3);
 $shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.1);
-
-// FONT VARIABLES
-$font-primary: "Nunito", sans-serif;
-$font-display: "Josefin Sans", sans-serif;
 
 //RESPONSIVE BREAKPOINT
 $bp-tab-land: 75em; //1200px
@@ -52,7 +48,6 @@ body {
 //////////////// TYPOGRAPHY START //////////////////////
 ///
 %heading {
-  font-family: $font-display;
   font-weight: 400;
   color: $color-primary-1;
 }

@@ -15,7 +15,6 @@ body {
   color: #9698a6; }
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
-  font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   color: #2d314d; }
 
@@ -48,6 +47,42 @@ body {
 
 .u-margin-top-big {
   margin-top: 8rem !important; }
+
+.header {
+  height: 6rem;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  padding: 0 16rem;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
+  .header__nav {
+    display: flex;
+    align-self: stretch;
+    align-items: center; }
+  .header__nav-item {
+    position: relative;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center; }
+    .header__nav-item:not(:last-child) {
+      margin-right: 2.5rem; }
+  .header__nav-item-link:link, .header__nav-item-link:visited {
+    text-decoration: none;
+    color: #9698a6;
+    font-size: 1.6rem; }
+  .header__nav-item-link:hover, .header__nav-item-link:active {
+    color: #2d314d; }
+  .header__nav-item-line {
+    background-image: linear-gradient(to left, #31d35c, #2bb7da);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 0.3rem;
+    width: 100%;
+    opacity: 0; }
 
 .attribution {
   font-size: 11px;
