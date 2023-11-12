@@ -1,0 +1,18 @@
+.btn {
+  background-image: linear-gradient(
+    to left,
+    $color-primary-2,
+    $color-primary-3
+  );
+  color: $color-text;
+  border: none;
+  padding: 1.5rem 2rem;
+  display: inline-block;
+  &:hover {
+    background-image: linear-gradient(
+      to left,
+      lighten($color-primary-2, 5%),
+      lighten($color-primary-3, 5%)
+    );
+  }
+}

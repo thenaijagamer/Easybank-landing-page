@@ -7,10 +7,7 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: $shadow-light;
-  &__logo-box {
-  }
-  &__logo {
-  }
+
   &__nav {
     display: flex;
     align-self: stretch;
@@ -32,12 +29,14 @@
       text-decoration: none;
       color: $color-text;
       font-size: 1.6rem;
+      transition: all 0.3s ease;
     }
     &:hover,
     &:active {
       color: $color-primary-1;
     }
   }
+
   &__nav-item-line {
     background-image: linear-gradient(
       to left,
@@ -50,5 +49,11 @@
     height: 0.3rem;
     width: 100%;
     opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &__nav-item-link:hover + &__nav-item-line {
+    color: $color-primary-1;
+    opacity: 1;
   }
 }
