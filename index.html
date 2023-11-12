@@ -4,17 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./img/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Easybank landing page</title>
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <header>
+        <div class="header__logo-box">
+          <img class="header__logo" src="img/logo.svg" alt="Logo" />
+        </div>
+        <nav class="header__nav">
+          <a href="#" class="header__nav-item">Home <span></span></a>
+          <a href="#" class="header__nav-item">About <span></span></a>
+          <a href="#" class="header__nav-item">Contact <span></span></a>
+          <a href="#" class="header__nav-item">Blog <span></span></a>
+          <a href="#" class="header__nav-item">Careers<span></span></a>
+        </nav>
+        <button class="btn">Request Invite</button>
+      </header>
+    </header>
+
+    <main class="main">
+      <section class="forward"></section>
+      <section class="Benefits"></section>
+      <section class="Blogs"></section>
+    </main>
+    <footer class="footer"></footer>
   </body>
 </html>
