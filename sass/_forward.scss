@@ -1,0 +1,28 @@
+.forward {
+  height: 80vh;
+  width: 100vw;
+  background-color: orangered;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-left: 16rem;
+  &__message {
+    width: 40%;
+  }
+  &__heading {
+  }
+  &__text {
+  }
+  &__bg-intro {
+    position: absolute;
+    top: -260px;
+    right: -27%;
+  }
+  &__mockup {
+    position: absolute;
+    top: -125px;
+    right: -135px;
+    z-index: 11;
+  }
+}

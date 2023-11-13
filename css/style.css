@@ -48,6 +48,27 @@ body {
 .u-margin-top-big {
   margin-top: 8rem !important; }
 
+.forward {
+  height: 80vh;
+  width: 100vw;
+  background-color: orangered;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-left: 16rem; }
+  .forward__message {
+    width: 40%; }
+  .forward__bg-intro {
+    position: absolute;
+    top: -260px;
+    right: -27%; }
+  .forward__mockup {
+    position: absolute;
+    top: -125px;
+    right: -135px;
+    z-index: 11; }
+
 .header {
   height: 6rem;
   width: 100vw;
@@ -56,7 +77,9 @@ body {
   padding: 0 16rem;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10; }
   .header__nav {
     display: flex;
     align-self: stretch;
