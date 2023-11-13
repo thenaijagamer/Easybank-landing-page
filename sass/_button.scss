@@ -1,18 +1,19 @@
 .btn {
-  background-image: linear-gradient(
-    to left,
+  background: linear-gradient(
+    to right bottom,
     $color-primary-2,
     $color-primary-3
   );
-  color: $color-text;
+  color: $color-white;
+  font-family: inherit;
   border: none;
-  padding: 1.5rem 2rem;
+  padding: 1.2rem 2rem;
   display: inline-block;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  filter: brightness(100%);
+
   &:hover {
-    background-image: linear-gradient(
-      to left,
-      lighten($color-primary-2, 5%),
-      lighten($color-primary-3, 5%)
-    );
+    filter: brightness(120%);
   }
 }

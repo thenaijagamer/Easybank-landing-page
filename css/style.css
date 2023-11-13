@@ -77,7 +77,7 @@ body {
   .header__nav-item-link:hover, .header__nav-item-link:active {
     color: #2d314d; }
   .header__nav-item-line {
-    background-image: linear-gradient(to left, #31d35c, #2bb7da);
+    background-image: linear-gradient(to right bottom, #31d35c, #2bb7da);
     position: absolute;
     bottom: 0;
     right: 0;
@@ -88,6 +88,19 @@ body {
   .header__nav-item-link:hover + .header__nav-item-line {
     color: #2d314d;
     opacity: 1; }
+
+.btn {
+  background: linear-gradient(to right bottom, #31d35c, #2bb7da);
+  color: white;
+  font-family: inherit;
+  border: none;
+  padding: 1.2rem 2rem;
+  display: inline-block;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  filter: brightness(100%); }
+  .btn:hover {
+    filter: brightness(120%); }
 
 .attribution {
   font-size: 11px;
