@@ -119,6 +119,12 @@ body {
     filter: brightness(120%);
     background: linear-gradient(to right bottom); }
 
+.benefits {
+  padding: 10rem 16rem;
+  z-index: 2;
+  position: relative;
+  background-color: orangered; }
+
 .attribution {
   font-size: 11px;
   text-align: center;
