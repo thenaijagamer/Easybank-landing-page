@@ -1,18 +1,22 @@
 .forward {
-  height: 80vh;
+  height: calc(100vh - 6rem);
   width: 100vw;
-  background-color: orangered;
+  background-color: $color-grey-blue-light;
   position: relative;
   display: flex;
   align-items: center;
-  overflow: hidden;
   padding-left: 16rem;
   &__message {
-    width: 40%;
+    // width: 44rem;
+    width: 33%;
   }
   &__heading {
+    margin-bottom: 4rem;
+    // width: 44rem;
   }
   &__text {
+    margin-bottom: 4rem;
+    // width: 44rem;
   }
   &__bg-intro {
     position: absolute;
@@ -23,6 +27,6 @@
     position: absolute;
     top: -125px;
     right: -135px;
-    z-index: 11;
+    z-index: 5;
   }
 }

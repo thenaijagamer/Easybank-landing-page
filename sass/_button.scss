@@ -12,6 +12,7 @@
   border-radius: 50px;
   transition: all 0.3s ease;
   filter: brightness(100%);
+  box-shadow: $shadow-light;
   &:hover {
     filter: brightness(120%);
     background: linear-gradient(to right bottom);

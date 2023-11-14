@@ -12,53 +12,46 @@ html {
 body {
   font-size: 1.8rem;
   font-family: "Public Sans", sans-serif;
-  color: #9698a6; }
+  color: #9698a6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
-.heading-1, .heading-2, .heading-3, .heading-4 {
+.main {
+  overflow: hidden; }
+
+.h-1, .h-2, .h-3, .h-4 {
   font-weight: 400;
   color: #2d314d; }
+
+.h-1 {
+  font-size: 5rem; }
 
 .mb-sm {
   margin-bottom: 2rem; }
 
 .mb-md {
-  margin-bottom: 3rem; }
-
-.mb-lg {
   margin-bottom: 4rem; }
 
-.mb-hg {
+.mb-lg {
   margin-bottom: 8rem; }
 
 .u-center-text {
-  text-align: center !important; }
-
-.u-margin-bottom-big {
-  margin-bottom: 8rem !important; }
-
-.u-margin-bottom-medium {
-  margin-bottom: 4rem !important; }
-
-.u-margin-bottom-small {
-  margin-bottom: 1.5rem !important; }
-
-.u-margin-top-huge {
-  margin-top: 10rem !important; }
-
-.u-margin-top-big {
-  margin-top: 8rem !important; }
+  text-align: center; }
 
 .forward {
-  height: 80vh;
+  height: calc(100vh - 6rem);
   width: 100vw;
-  background-color: orangered;
+  background-color: #f3f4f6;
   position: relative;
   display: flex;
   align-items: center;
-  overflow: hidden;
   padding-left: 16rem; }
   .forward__message {
-    width: 40%; }
+    width: 33%; }
+  .forward__heading {
+    margin-bottom: 4rem; }
+  .forward__text {
+    margin-bottom: 4rem; }
   .forward__bg-intro {
     position: absolute;
     top: -260px;
@@ -67,7 +60,7 @@ body {
     position: absolute;
     top: -125px;
     right: -135px;
-    z-index: 11; }
+    z-index: 5; }
 
 .header {
   height: 6rem;
@@ -109,7 +102,6 @@ body {
     opacity: 0;
     transition: opacity 0.3s ease; }
   .header__nav-item-link:hover + .header__nav-item-line {
-    color: #2d314d;
     opacity: 1; }
 
 .btn {
@@ -121,7 +113,8 @@ body {
   display: inline-block;
   border-radius: 50px;
   transition: all 0.3s ease;
-  filter: brightness(100%); }
+  filter: brightness(100%);
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
   .btn:hover {
     filter: brightness(120%);
     background: linear-gradient(to right bottom); }

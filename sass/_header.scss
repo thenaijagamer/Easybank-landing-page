@@ -35,7 +35,7 @@
     }
     &:hover,
     &:active {
-      color: $color-primary-1;
+      color: $color-text-h;
     }
   }
 
@@ -55,7 +55,6 @@
   }
 
   &__nav-item-link:hover + &__nav-item-line {
-    color: $color-primary-1;
     opacity: 1;
   }
 }
