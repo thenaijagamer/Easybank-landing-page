@@ -38,6 +38,7 @@ body {
   font-size: 1.8rem;
   font-family: "Public Sans", sans-serif;
   color: $color-text;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   // &::-webkit-scrollbar {
@@ -80,10 +81,12 @@ body {
 
 .h-2 {
   @extend %heading;
+  font-size: 4rem;
 }
 
 .h-3 {
   @extend %heading;
+  font-size: 3rem;
 }
 
 .h-4 {

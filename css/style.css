@@ -13,6 +13,7 @@ body {
   font-size: 1.8rem;
   font-family: "Public Sans", sans-serif;
   color: #9698a6;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -25,6 +26,12 @@ body {
 
 .h-1 {
   font-size: 5rem; }
+
+.h-2 {
+  font-size: 4rem; }
+
+.h-3 {
+  font-size: 3rem; }
 
 .mb-sm {
   margin-bottom: 2rem; }
@@ -41,7 +48,7 @@ body {
 .forward {
   height: calc(100vh - 6rem);
   width: 100vw;
-  background-color: #f3f4f6;
+  background-color: #fafafa;
   position: relative;
   display: flex;
   align-items: center;
@@ -123,7 +130,24 @@ body {
   padding: 10rem 16rem;
   z-index: 2;
   position: relative;
-  background-color: orangered; }
+  background-color: #f3f4f6; }
+  .benefits__heading-box {
+    width: 55%;
+    margin-bottom: 6rem; }
+  .benefits__header {
+    margin-bottom: 3rem; }
+  .benefits__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem; }
+
+.benefit__header {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem; }
+
+.benefit__message {
+  font-size: 1.7rem; }
 
 .attribution {
   font-size: 11px;
