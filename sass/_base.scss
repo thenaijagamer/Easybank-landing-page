@@ -1,9 +1,9 @@
 // COLOR VARIABLES
-$color-text-h: hsl(233, 26%, 24%); //dark-blue
-$color-primary-2: hsl(136, 65%, 51%); //lime-green
-$color-primary-3: hsl(192, 70%, 51%); //bright-cyan
+$color-text-h: hsl(233, 26%, 24%); 
+$color-primary-2: hsl(136, 65%, 51%); 
+$color-primary-3: hsl(192, 70%, 51%); 
 
-$color-text: hsl(233, 8%, 62%); //grey-blue
+$color-text: hsl(233, 8%, 62%); 
 $color-grey-blue-light: hsl(220, 16%, 96%);
 $color-very-light-gray: hsl(0, 0%, 98%);
 $color-white: hsl(0, 0%, 100%);
@@ -41,64 +41,54 @@ body {
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  // &::-webkit-scrollbar {
-  //   width: 8px;
-  //   height: 8px;
-  //   display: block;
-  // }
-  // &::-webkit-scrollbar-thumb {
-  //   background-color: #ccc;
-  //   border-radius: 4px;
-  //   &:hover {
-  //     background-color: #b3b3b3;
-  //     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-  //   }
-  //   &:active {
-  //     background-color: #999999;
-  //   }
-  // }
-}
-.main {
-  overflow: hidden;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    display: block;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+    &:hover {
+      background-color: #b3b3b3;
+      box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    &:active {
+      background-color: #999999;
+    }
+  }
 }
 
-// ::selection {
-//     background-color: $color-primary;
-//     color: $color-white;
-// }
+::selection {
+  background-color: $color-primary-2;
+  color: $color-white;
+}
 
-//////////////// TYPOGRAPHY START //////////////////////
-///
+// TYPOGRAPHY 
 %heading {
   font-weight: 400;
   color: $color-text-h;
   line-height: normal;
 }
-
 .h-1 {
   @extend %heading;
   font-size: 5rem;
 }
-
 .h-2 {
   @extend %heading;
   font-size: 4rem;
 }
-
 .h-3 {
   @extend %heading;
   font-size: 3rem;
 }
-
 .h-4 {
   @extend %heading;
   font-size: 2rem;
 }
-///
-//////////////// TYPOGRAPHY END //////////////////////
 
-//////////////// UTILITY START //////////////////////
-///
+// UTILITY 
 .mb-sm {
   margin-bottom: 2rem;
 }
@@ -111,5 +101,3 @@ body {
 .u-center-text {
   text-align: center;
 }
-///
-//////////////// UTILITY END //////////////////////

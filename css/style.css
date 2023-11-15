@@ -15,10 +15,24 @@ body {
   color: #9698a6;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; }
+  body::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    display: block; }
+  body::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px; }
+    body::-webkit-scrollbar-thumb:hover {
+      background-color: #b3b3b3;
+      box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2); }
+    body::-webkit-scrollbar-thumb:active {
+      background-color: #999999; }
 
-.main {
-  overflow: hidden; }
+::selection {
+  background-color: #31d35c;
+  color: white; }
 
 .h-1, .h-2, .h-3, .h-4 {
   font-weight: 400;
