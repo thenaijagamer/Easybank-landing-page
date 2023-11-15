@@ -38,7 +38,7 @@ body {
   font-size: 1.8rem;
   font-family: "Public Sans", sans-serif;
   color: $color-text;
-  line-height: 1.6;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   // &::-webkit-scrollbar {
@@ -72,6 +72,7 @@ body {
 %heading {
   font-weight: 400;
   color: $color-text-h;
+  line-height: normal;
 }
 
 .h-1 {

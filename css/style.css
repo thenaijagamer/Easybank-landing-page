@@ -13,7 +13,7 @@ body {
   font-size: 1.8rem;
   font-family: "Public Sans", sans-serif;
   color: #9698a6;
-  line-height: 1.6;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -22,7 +22,8 @@ body {
 
 .h-1, .h-2, .h-3, .h-4 {
   font-weight: 400;
-  color: #2d314d; }
+  color: #2d314d;
+  line-height: normal; }
 
 .h-1 {
   font-size: 5rem; }
@@ -139,7 +140,7 @@ body {
   .benefits__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-column-gap: 2rem;
+    grid-column-gap: 2.2rem;
     grid-row-gap: 3rem; }
 
 .benefit__header {
