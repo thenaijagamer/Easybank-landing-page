@@ -187,6 +187,10 @@ body {
     font-size: 1.4rem;
     line-height: 1.2; }
 
+.footer {
+  padding: 6rem 16rem;
+  background-color: #2d314d; }
+
 .attribution {
   font-size: 11px;
   text-align: center;
