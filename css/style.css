@@ -34,6 +34,9 @@ body {
 .h-3 {
   font-size: 3rem; }
 
+.h-4 {
+  font-size: 2rem; }
+
 .mb-sm {
   margin-bottom: 2rem; }
 
@@ -45,30 +48,6 @@ body {
 
 .u-center-text {
   text-align: center; }
-
-.forward {
-  height: calc(100vh - 6rem);
-  width: 100vw;
-  background-color: #fafafa;
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding-left: 16rem; }
-  .forward__message {
-    width: 33%; }
-  .forward__heading {
-    margin-bottom: 4rem; }
-  .forward__text {
-    margin-bottom: 4rem; }
-  .forward__bg-intro {
-    position: absolute;
-    top: -260px;
-    right: -27%; }
-  .forward__mockup {
-    position: absolute;
-    top: -125px;
-    right: -135px;
-    z-index: 5; }
 
 .header {
   height: 6rem;
@@ -112,6 +91,30 @@ body {
   .header__nav-item-link:hover + .header__nav-item-line {
     opacity: 1; }
 
+.forward {
+  height: calc(100vh - 6rem);
+  width: 100vw;
+  background-color: #fafafa;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 16rem; }
+  .forward__message {
+    width: 33%; }
+  .forward__heading {
+    margin-bottom: 4rem; }
+  .forward__text {
+    margin-bottom: 4rem; }
+  .forward__bg-intro {
+    position: absolute;
+    top: -260px;
+    right: -27%; }
+  .forward__mockup {
+    position: absolute;
+    top: -125px;
+    right: -135px;
+    z-index: 5; }
+
 .btn {
   background: linear-gradient(to right bottom, #31d35c, #2bb7da);
   color: white;
@@ -149,6 +152,40 @@ body {
 
 .benefit__message {
   font-size: 1.7rem; }
+
+.blogs {
+  padding: 10rem 16rem;
+  background-color: #fafafa; }
+  .blogs__header {
+    margin-bottom: 6rem; }
+  .blogs__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 3rem;
+    grid-row-gap: 5rem; }
+
+.blog {
+  height: 450px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
+  .blog__image {
+    height: 50%;
+    width: 100%;
+    object-fit: cover; }
+  .blog__content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem 2rem 2rem; }
+  .blog__author {
+    font-size: 1.2rem;
+    margin-bottom: 1.3rem; }
+  .blog__header {
+    margin-bottom: 1.3rem; }
+  .blog__message {
+    font-size: 1.4rem;
+    line-height: 1.2; }
 
 .attribution {
   font-size: 11px;
