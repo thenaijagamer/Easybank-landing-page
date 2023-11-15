@@ -132,7 +132,7 @@ body {
     z-index: 5; }
 
 .btn {
-  background: linear-gradient(to right bottom, #31d35c, #2bb7da);
+  background: linear-gradient(to right, #31d35c, #2bb7da);
   color: white;
   font-family: inherit;
   border: none;
@@ -143,8 +143,7 @@ body {
   filter: brightness(100%);
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
   .btn:hover {
-    filter: brightness(120%);
-    background: linear-gradient(to right bottom); }
+    filter: brightness(115%); }
 
 .benefits {
   padding: 10rem 16rem;
