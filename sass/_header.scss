@@ -10,6 +10,9 @@
   position: relative;
   z-index: 10;
 
+  &__logo {
+    display: block;
+  }
   &__nav {
     display: flex;
     align-self: stretch;

@@ -26,18 +26,25 @@
   &__content {
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
-    padding: 2rem 2rem 2rem 2rem;
+    justify-content: space-between;
+    padding: 2rem 2rem;
   }
   &__author {
     font-size: 1.2rem;
-    margin-bottom: 1.3rem;
+    margin-bottom: 1rem;
+    line-height: normal;
   }
   &__header {
-    margin-bottom: 1.3rem;
+    margin-bottom: 1rem;
+    transition: color 0.2s;
+    cursor: pointer;
+    line-height: normal;
+    &:hover {
+      color: $color-primary-2;
+    }
   }
   &__message {
     font-size: 1.4rem;
-    line-height: 1.2;
+    line-height: 1.5;
   }
 }
