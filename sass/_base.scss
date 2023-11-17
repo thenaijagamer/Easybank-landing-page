@@ -1,9 +1,9 @@
 // COLOR VARIABLES
-$color-text-h: hsl(233, 26%, 24%); 
-$color-primary-2: hsl(136, 65%, 51%); 
-$color-primary-3: hsl(192, 70%, 51%); 
+$color-text-h: hsl(233, 26%, 24%);
+$color-primary-2: hsl(136, 65%, 51%);
+$color-primary-3: hsl(192, 70%, 51%);
 
-$color-text: hsl(233, 8%, 62%); 
+$color-text: hsl(233, 8%, 62%);
 $color-grey-blue-light: hsl(220, 16%, 96%);
 $color-very-light-gray: hsl(0, 0%, 98%);
 $color-white: hsl(0, 0%, 100%);
@@ -14,7 +14,7 @@ $shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.1);
 //RESPONSIVE BREAKPOINT
 $bp-tab-land: 75em; //1200px
 // $bp-large: 68.75em; //1100px
-$bp-tab-port: 53.125em; //900px
+$bp-tab-port: 56.25em; //900px
 $bp-phone: 37.5em; //600px
 // $bp-small: 31.25em; //500px
 
@@ -29,9 +29,12 @@ $bp-phone: 37.5em; //600px
 html {
   box-sizing: border-box;
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
-  // @media only screen and (max-width: $bp-large) {
-  //   font-size: 58.6%;
-  // }
+  @media only screen and (max-width: $bp-tab-land) {
+    font-size: 58.6%;
+  }
+  @media only screen and (max-width: $bp-tab-port) {
+    font-size: 54.6%;
+  }
 }
 
 body {
@@ -65,7 +68,7 @@ body {
   color: $color-white;
 }
 
-// TYPOGRAPHY 
+// TYPOGRAPHY
 %heading {
   font-weight: 400;
   color: $color-text-h;
@@ -86,18 +89,4 @@ body {
 .h-4 {
   @extend %heading;
   font-size: 2rem;
-}
-
-// UTILITY 
-.mb-sm {
-  margin-bottom: 2rem;
-}
-.mb-md {
-  margin-bottom: 4rem;
-}
-.mb-lg {
-  margin-bottom: 8rem;
-}
-.u-center-text {
-  text-align: center;
 }

@@ -8,6 +8,12 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 58.6%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 54.6%; } }
 
 body {
   font-size: 1.8rem;
@@ -51,18 +57,6 @@ body {
 .h-4 {
   font-size: 2rem; }
 
-.mb-sm {
-  margin-bottom: 2rem; }
-
-.mb-md {
-  margin-bottom: 4rem; }
-
-.mb-lg {
-  margin-bottom: 8rem; }
-
-.u-center-text {
-  text-align: center; }
-
 .header {
   height: 6rem;
   width: 100vw;
@@ -72,8 +66,16 @@ body {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 10; }
+  @media only screen and (max-width: 75em) {
+    .header {
+      padding: 0 10rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .header {
+      padding: 0 6rem; } }
   .header__logo {
     display: block; }
   .header__nav {
@@ -88,11 +90,17 @@ body {
     align-items: center; }
     .header__nav-item:not(:last-child) {
       margin-right: 2.5rem; }
+      @media only screen and (max-width: 56.25em) {
+        .header__nav-item:not(:last-child) {
+          margin-right: 1rem; } }
   .header__nav-item-link:link, .header__nav-item-link:visited {
     text-decoration: none;
     color: #9698a6;
     font-size: 1.6rem;
     transition: all 0.3s ease; }
+    @media only screen and (max-width: 56.25em) {
+      .header__nav-item-link:link, .header__nav-item-link:visited {
+        font-size: 1.5rem; } }
   .header__nav-item-link:hover, .header__nav-item-link:active {
     color: #2d314d; }
   .header__nav-item-line {
@@ -108,160 +116,101 @@ body {
     opacity: 1; }
 
 .forward {
-  height: calc(100vh - 6rem);
+  height: 66rem;
   width: 100vw;
   background-color: #fafafa;
   position: relative;
   display: flex;
   align-items: center;
-  padding-left: 16rem; }
+  padding-left: 16rem;
+  margin-top: 6rem; }
+  @media only screen and (max-width: 75em) {
+    .forward {
+      padding-left: 10rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .forward {
+      padding-left: 6rem; } }
   .forward__message {
     width: 33%;
-    -webkit-animation: bounce-in-left 1.1s 2s backwards;
-    animation: bounce-in-left 1.1s 2s backwards; }
+    animation: bounce-in-left 1.1s 2s backwards;
+    position: relative;
+    z-index: 1; }
+    @media only screen and (max-width: 56.25em) {
+      .forward__message {
+        width: 37%; } }
+    @media only screen and (max-width: 56.25em) {
+      .forward__message {
+        width: 40%; } }
   .forward__heading {
     margin-bottom: 4rem; }
   .forward__text {
     margin-bottom: 4rem; }
+  .forward__bg-intro-box {
+    position: relative;
+    height: 100%;
+    width: 67%; }
   .forward__bg-intro {
     position: absolute;
-    top: -260px;
-    right: -27%;
-    -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) backwards;
+    top: -27rem;
     animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) backwards; }
   .forward__mockup {
     position: absolute;
-    top: -125px;
-    right: -135px;
+    top: -12.5rem;
+    right: -13.5rem;
     z-index: 5;
-    -webkit-animation: swirl-in-fwd 0.6s ease-out 1s both;
     animation: swirl-in-fwd 0.6s ease-out 1s both; }
-
-@-webkit-keyframes bounce-in-left {
-  0% {
-    -webkit-transform: translateX(-600px);
-    transform: translateX(-600px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-    opacity: 0; }
-  38% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-    opacity: 1; }
-  55% {
-    -webkit-transform: translateX(-68px);
-    transform: translateX(-68px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in; }
-  72% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out; }
-  81% {
-    -webkit-transform: translateX(-28px);
-    transform: translateX(-28px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in; }
-  90% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out; }
-  95% {
-    -webkit-transform: translateX(-8px);
-    transform: translateX(-8px);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in; }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out; } }
+    @media only screen and (max-width: 75em) {
+      .forward__mockup {
+        height: 125%;
+        top: -10.5rem;
+        right: -14.5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .forward__mockup {
+        width: 69%;
+        object-fit: contain;
+        height: 130%; } }
 
 @keyframes bounce-in-left {
   0% {
-    -webkit-transform: translateX(-600px);
     transform: translateX(-600px);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     opacity: 0; }
   38% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
     opacity: 1; }
   55% {
-    -webkit-transform: translateX(-68px);
     transform: translateX(-68px);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
   72% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; }
   81% {
-    -webkit-transform: translateX(-28px);
     transform: translateX(-28px);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
   90% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; }
   95% {
-    -webkit-transform: translateX(-8px);
     transform: translateX(-8px);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; }
   100% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; } }
-
-@-webkit-keyframes slide-in-right {
-  0% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
-    opacity: 0; }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1; } }
 
 @keyframes slide-in-right {
   0% {
-    -webkit-transform: translateX(1000px);
     transform: translateX(1000px);
     opacity: 0; }
   100% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
-    opacity: 1; } }
-
-@-webkit-keyframes swirl-in-fwd {
-  0% {
-    -webkit-transform: rotate(-540deg) scale(0);
-    transform: rotate(-540deg) scale(0);
-    opacity: 0; }
-  100% {
-    -webkit-transform: rotate(0) scale(1);
-    transform: rotate(0) scale(1);
     opacity: 1; } }
 
 @keyframes swirl-in-fwd {
   0% {
-    -webkit-transform: rotate(-540deg) scale(0);
     transform: rotate(-540deg) scale(0);
     opacity: 0; }
   100% {
-    -webkit-transform: rotate(0) scale(1);
     transform: rotate(0) scale(1);
     opacity: 1; } }
 
@@ -276,6 +225,9 @@ body {
   transition: all 0.3s ease;
   filter: brightness(100%);
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
+  @media only screen and (max-width: 56.25em) {
+    .btn {
+      padding: 1rem 2rem; } }
   .btn:hover {
     filter: brightness(115%); }
 
@@ -284,20 +236,35 @@ body {
   z-index: 2;
   position: relative;
   background-color: #f3f4f6; }
+  @media only screen and (max-width: 75em) {
+    .benefits {
+      padding: 10rem 10rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .benefits {
+      padding: 6rem 6rem; } }
   .benefits__heading-box {
     width: 55%;
     margin-bottom: 6rem; }
+    @media only screen and (max-width: 56.25em) {
+      .benefits__heading-box {
+        width: 70%;
+        margin-bottom: 5rem; } }
   .benefits__header {
     margin-bottom: 3rem; }
+    @media only screen and (max-width: 56.25em) {
+      .benefits__header {
+        margin-bottom: 2rem; } }
   .benefits__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-column-gap: 2.2rem;
-    grid-row-gap: 3rem; }
+    grid-row-gap: 4rem; }
 
 .benefit__header {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem; }
+  margin: 2.5rem 0; }
+  @media only screen and (max-width: 56.25em) {
+    .benefit__header {
+      margin: 2rem 0; } }
 
 .benefit__message {
   font-size: 1.7rem; }
@@ -305,16 +272,28 @@ body {
 .blogs {
   padding: 10rem 16rem;
   background-color: #fafafa; }
+  @media only screen and (max-width: 75em) {
+    .blogs {
+      padding: 10rem 10rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .blogs {
+      padding: 6rem 6rem; } }
   .blogs__header {
     margin-bottom: 6rem; }
+    @media only screen and (max-width: 56.25em) {
+      .blogs__header {
+        margin-bottom: 4rem; } }
   .blogs__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 3rem;
     grid-row-gap: 5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .blogs__container {
+        grid-row-gap: 3rem; } }
 
 .blog {
-  height: 450px;
+  height: 45rem;
   border-radius: 8px;
   overflow: hidden;
   background-color: white;
@@ -346,6 +325,12 @@ body {
 .footer {
   padding: 6rem 16rem 0 16rem;
   background-color: #2d314d; }
+  @media only screen and (max-width: 75em) {
+    .footer {
+      padding: 6rem 10rem 0 10rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      padding: 3rem 6rem 0 6rem; } }
   .footer__box {
     display: flex;
     margin-bottom: 2rem; }
@@ -354,6 +339,9 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin-right: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__brandmark {
+        margin-right: 4rem; } }
   .footer__icons {
     display: flex; }
   .footer__icon {
@@ -374,6 +362,9 @@ body {
     margin-right: auto;
     grid-gap: 1.5rem;
     align-items: center; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__nav {
+        grid-gap: 1rem; } }
   .footer__nav-item {
     color: white;
     transition: color 0.2s ease;
