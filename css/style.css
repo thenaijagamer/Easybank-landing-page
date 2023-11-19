@@ -25,7 +25,8 @@ body {
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  position: relative; }
   body::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -81,7 +82,7 @@ body {
       padding: 0 6rem; } }
   @media only screen and (max-width: 40.625em) {
     .header {
-      padding: 0 3rem; } }
+      padding: 0 2.5rem; } }
   .header__logo {
     display: block; }
   .header__nav {
@@ -90,12 +91,7 @@ body {
     align-items: center; }
     @media only screen and (max-width: 40.625em) {
       .header__nav {
-        position: fixed;
-        top: 9rem;
-        left: 0;
-        display: block;
-        background-color: orangered;
-        height: 40rem; } }
+        display: none; } }
   .header__nav-item {
     position: relative;
     list-style: none;
@@ -132,6 +128,52 @@ body {
     .header__nav-item-link:hover::after, .header__nav-item-link:active::after {
       content: "";
       opacity: 1; }
+
+@media only screen and (max-width: 40.625em) {
+  .header .header__nav-btn {
+    display: none; } }
+
+.phone {
+  display: none; }
+  @media only screen and (max-width: 40.625em) {
+    .phone {
+      position: fixed;
+      top: 6rem;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100vw;
+      padding: 3rem 3rem;
+      z-index: 10;
+      backdrop-filter: blur(3px); } }
+  @media only screen and (max-width: 40.625em) {
+    .phone__nav {
+      display: flex;
+      background-color: white;
+      width: calc(100vw - 5rem);
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3rem 0;
+      border-radius: 3px;
+      margin-bottom: 10rem; } }
+  @media only screen and (max-width: 40.625em) {
+    .phone__nav-item {
+      display: inline-block;
+      font-weight: 700;
+      line-height: normal;
+      list-style: none; } }
+  @media only screen and (max-width: 40.625em) {
+    .phone__nav-item:not(:last-child) {
+      margin-bottom: 2rem; } }
+  @media only screen and (max-width: 40.625em) {
+    .phone__nav-item-link:link, .phone__nav-item-link:visited {
+      text-decoration: none;
+      color: #2d314d;
+      font-size: 1.6rem; } }
+  .phone__nav-item-link:active {
+    color: #2d314d; }
 
 .forward {
   height: 66rem;

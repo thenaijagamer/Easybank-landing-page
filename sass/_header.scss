@@ -18,7 +18,7 @@
     padding: 0 6rem;
   }
   @media only screen and (max-width: $bp-phone) {
-    padding: 0 3rem;
+    padding: 0 2.5rem;
   }
   &__logo {
     display: block;
@@ -28,12 +28,7 @@
     align-self: stretch;
     align-items: center;
     @media only screen and (max-width: $bp-phone) {
-      position: fixed;
-      top: 9rem;
-      left: 0;
-      display: block;
-      background-color: orangered;
-      height: 40rem;
+      display: none;
     }
   }
   &__nav-item {
@@ -86,5 +81,12 @@
         opacity: 1;
       }
     }
+  }
+}
+
+// To gain higher specificity
+.header .header__nav-btn {
+  @media only screen and (max-width: $bp-phone) {
+    display: none;
   }
 }
