@@ -22,17 +22,18 @@
   }
   &__logo {
     display: block;
-
-    // @media only screen and (max-width: $bp-tab-port) {
-    //   width: 80%;
-    // }
   }
   &__nav {
     display: flex;
     align-self: stretch;
     align-items: center;
     @media only screen and (max-width: $bp-phone) {
-      display: none;
+      position: fixed;
+      top: 9rem;
+      left: 0;
+      display: block;
+      background-color: orangered;
+      height: 40rem;
     }
   }
   &__nav-item {
@@ -48,6 +49,7 @@
       }
     }
   }
+
   &__nav-item-link {
     &:link,
     &:visited {
@@ -59,28 +61,30 @@
         font-size: 1.5rem;
       }
     }
+    &::after {
+      content: "";
+      background-image: linear-gradient(
+        to right bottom,
+        $color-primary-2,
+        $color-primary-3
+      );
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 0.3rem;
+      width: 100%;
+      display: inline-block;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
     &:hover,
     &:active {
       color: $color-text-h;
+      &::after {
+        content: "";
+        opacity: 1;
+      }
     }
-  }
-
-  &__nav-item-line {
-    background-image: linear-gradient(
-      to right bottom,
-      $color-primary-2,
-      $color-primary-3
-    );
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 0.3rem;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-
-  &__nav-item-link:hover + &__nav-item-line {
-    opacity: 1;
   }
 }
