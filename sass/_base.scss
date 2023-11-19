@@ -12,10 +12,10 @@ $shadow-dark: 0rem 2rem 6rem rgba(0, 0, 0, 0.3);
 $shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.1);
 
 //RESPONSIVE BREAKPOINT
+$bp-large-desktop: 112.5em; //1800px
 $bp-tab-land: 75em; //1200px
-// $bp-large: 68.75em; //1100px
 $bp-tab-port: 56.25em; //900px
-$bp-phone: 37.5em; //600px
+$bp-phone: 40.625em; //650px
 // $bp-small: 31.25em; //500px
 
 *,
@@ -29,6 +29,9 @@ $bp-phone: 37.5em; //600px
 html {
   box-sizing: border-box;
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+  @media only screen and (min-width: $bp-large-desktop) {
+    font-size: 75%;
+  }
   @media only screen and (max-width: $bp-tab-land) {
     font-size: 58.6%;
   }

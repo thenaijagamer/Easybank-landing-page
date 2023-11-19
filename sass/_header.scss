@@ -17,6 +17,9 @@
   @media only screen and (max-width: $bp-tab-port) {
     padding: 0 6rem;
   }
+  @media only screen and (max-width: $bp-phone) {
+    padding: 0 3rem;
+  }
   &__logo {
     display: block;
 
@@ -28,6 +31,9 @@
     display: flex;
     align-self: stretch;
     align-items: center;
+    @media only screen and (max-width: $bp-phone) {
+      display: none;
+    }
   }
   &__nav-item {
     position: relative;

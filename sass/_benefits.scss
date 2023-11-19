@@ -9,6 +9,9 @@
   @media only screen and (max-width: $bp-tab-port) {
     padding: 6rem 6rem;
   }
+  @media only screen and (max-width: $bp-phone) {
+    padding: 6rem 3rem;
+  }
   &__heading-box {
     width: 55%;
     margin-bottom: 6rem;
@@ -23,8 +26,6 @@
       margin-bottom: 2rem;
     }
   }
-  &__message {
-  }
   &__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -34,8 +35,6 @@
 }
 
 .benefit {
-  &__icon {
-  }
   &__header {
     margin: 2.5rem 0;
     @media only screen and (max-width: $bp-tab-port) {

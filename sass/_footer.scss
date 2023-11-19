@@ -7,6 +7,9 @@
   @media only screen and (max-width: $bp-tab-port) {
     padding: 3rem 6rem 0 6rem;
   }
+  @media only screen and (max-width: $bp-phone) {
+    padding: 3rem 3rem 0 3rem;
+  }
   &__box {
     display: flex;
     margin-bottom: 2rem;
