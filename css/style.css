@@ -145,7 +145,7 @@ body {
       height: 100vh;
       padding: 3rem 2.5rem;
       z-index: 10;
-      filter: blur(1px); } }
+      background-color: rgba(45, 49, 77, 0.4); } }
   .phone__nav {
     display: flex;
     background-color: white;
