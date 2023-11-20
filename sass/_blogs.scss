@@ -1,6 +1,7 @@
 .blogs {
   padding: 10rem 16rem;
   background-color: $color-very-light-gray;
+  overflow: hidden;
   @media only screen and (max-width: $bp-tab-land) {
     padding: 10rem 10rem;
   }

@@ -137,41 +137,35 @@ body {
   display: none; }
   @media only screen and (max-width: 40.625em) {
     .phone {
+      display: block;
       position: fixed;
       top: 6rem;
       left: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       width: 100vw;
-      padding: 3rem 3rem;
+      height: 100vh;
+      padding: 3rem 2.5rem;
       z-index: 10;
-      backdrop-filter: blur(3px); } }
-  @media only screen and (max-width: 40.625em) {
-    .phone__nav {
-      display: flex;
-      background-color: white;
-      width: calc(100vw - 5rem);
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      padding: 3rem 0;
-      border-radius: 3px;
-      margin-bottom: 10rem; } }
-  @media only screen and (max-width: 40.625em) {
-    .phone__nav-item {
-      display: inline-block;
-      font-weight: 700;
-      line-height: normal;
-      list-style: none; } }
-  @media only screen and (max-width: 40.625em) {
+      filter: blur(1px); } }
+  .phone__nav {
+    display: flex;
+    background-color: white;
+    width: calc(100vw - 5rem);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5rem 0;
+    border-radius: 3px; }
+  .phone__nav-item {
+    display: inline-block;
+    font-weight: 700;
+    line-height: normal;
+    list-style: none; }
     .phone__nav-item:not(:last-child) {
-      margin-bottom: 2rem; } }
-  @media only screen and (max-width: 40.625em) {
-    .phone__nav-item-link:link, .phone__nav-item-link:visited {
-      text-decoration: none;
-      color: #2d314d;
-      font-size: 1.6rem; } }
+      margin-bottom: 2.5rem; }
+  .phone__nav-item-link:link, .phone__nav-item-link:visited {
+    text-decoration: none;
+    color: #2d314d;
+    font-size: 1.6rem; }
   .phone__nav-item-link:active {
     color: #2d314d; }
 
@@ -183,7 +177,8 @@ body {
   display: flex;
   align-items: center;
   padding-left: 16rem;
-  margin-top: 6rem; }
+  margin-top: 6rem;
+  overflow: hidden; }
   @media only screen and (max-width: 75em) {
     .forward {
       padding-left: 10rem; } }
@@ -306,7 +301,8 @@ body {
   padding: 10rem 16rem;
   z-index: 2;
   position: relative;
-  background-color: #f3f4f6; }
+  background-color: #f3f4f6;
+  overflow: hidden; }
   @media only screen and (max-width: 75em) {
     .benefits {
       padding: 10rem 10rem; } }
@@ -345,7 +341,8 @@ body {
 
 .blogs {
   padding: 10rem 16rem;
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  overflow: hidden; }
   @media only screen and (max-width: 75em) {
     .blogs {
       padding: 10rem 10rem; } }
@@ -400,6 +397,7 @@ body {
     line-height: 1.5; }
 
 .footer {
+  overflow: hidden;
   padding: 6rem 16rem 0 16rem;
   background-color: #2d314d; }
   @media only screen and (max-width: 75em) {
