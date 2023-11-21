@@ -207,9 +207,9 @@ body {
     @media only screen and (max-width: 40.625em) {
       .forward__message {
         width: 100%;
-        margin-top: 2rem;
         padding: 0 2.5rem;
-        margin-bottom: 3rem; } }
+        margin-bottom: 3rem;
+        text-align: center; } }
   .forward__heading {
     margin-bottom: 4rem; }
   .forward__text {
@@ -223,8 +223,8 @@ body {
         top: 0;
         right: 0;
         width: 100%;
-        height: 60vw;
-        margin-bottom: 5rem; } }
+        height: 70vw;
+        margin-bottom: 10vw; } }
   .forward__bg-intro {
     position: absolute;
     top: -27rem;
@@ -242,10 +242,10 @@ body {
       .forward__bg-intro-m {
         display: block;
         position: absolute;
+        top: -14vw;
         right: 0;
-        bottom: 0;
         width: 100%;
-        height: 100%; } }
+        height: 150%; } }
   .forward__mockup {
     position: absolute;
     top: -12.5rem;
@@ -266,13 +266,10 @@ body {
         object-fit: contain; } }
     @media only screen and (max-width: 40.625em) {
       .forward__mockup {
-        object-fit: none;
-        top: -15rem;
+        top: -32vw;
         right: 50%;
-        transform: translateX(50%);
         width: calc(100vw - 5rem);
-        height: 115vw;
-        display: none; } }
+        height: 155%; } }
 
 @keyframes bounce-in-left {
   0% {
@@ -312,10 +309,10 @@ body {
 
 @keyframes swirl-in-fwd {
   0% {
-    transform: rotate(-540deg) scale(0);
+    transform: rotate(-540deg) scale(0) translateX(50%);
     opacity: 0; }
   100% {
-    transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1) translateX(50%);
     opacity: 1; } }
 
 .btn {
