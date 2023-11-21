@@ -68,9 +68,10 @@
       left: 0;
       height: 0.3rem;
       width: 100%;
+      transform: scaleX(0);
       display: inline-block;
-      opacity: 0;
-      transition: opacity 0.3s ease;
+      opacity: 0.5;
+      transition: all 0.3s ease;
       pointer-events: none;
     }
     &:hover,
@@ -79,6 +80,7 @@
       &::after {
         content: "";
         opacity: 1;
+        transform: scaleX(1);
       }
     }
   }
