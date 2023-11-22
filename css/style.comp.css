@@ -303,7 +303,8 @@ body {
         top: -14vw;
         right: 0;
         width: 100%;
-        height: 150%; } }
+        height: 150%;
+        animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) backwards; } }
   .forward__mockup {
     position: absolute;
     top: -12.5rem;
