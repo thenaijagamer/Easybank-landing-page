@@ -9,12 +9,18 @@
     padding: 6rem 6rem;
   }
   @media only screen and (max-width: $bp-phone) {
-    padding: 6rem 3rem;
+    padding: 5rem 3rem;
+  }
+  @media only screen and (max-width: $bp-small-phone) {
+    padding: 4rem 2.5rem;
   }
   &__header {
     margin-bottom: 6rem;
     @media only screen and (max-width: $bp-tab-port) {
       margin-bottom: 4rem;
+    }
+    @media only screen and (max-width: $bp-phone) {
+      text-align: center;
     }
   }
   &__container {
@@ -25,9 +31,9 @@
     @media only screen and (max-width: $bp-tab-port) {
       grid-row-gap: 3rem;
     }
-    // @media only screen and (max-width: $bp-phone) {
-    //   grid-template-columns: 1fr;
-    // }
+    @media only screen and (max-width: $bp-small-phone) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 .blog {
@@ -36,8 +42,8 @@
   background-color: $color-white;
   box-shadow: $shadow-light;
   height: 45rem;
-  @media only screen and (max-width: $bp-phone) {
-    // height: max-content;
+  @media only screen and (max-width: $bp-small-phone) {
+    height: max-content;
   }
 
   &__image {

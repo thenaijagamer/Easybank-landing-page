@@ -9,11 +9,17 @@
     padding: 3rem 6rem 0 6rem;
   }
   @media only screen and (max-width: $bp-phone) {
-    padding: 3rem 3rem 0 3rem;
+    padding: 5rem 3rem 0 3rem;
+  }
+  @media only screen and (max-width: $bp-small-phone) {
+    padding: 3rem 2.5rem 0 2.5rem;
   }
   &__box {
     display: flex;
     margin-bottom: 2rem;
+    @media only screen and (max-width: $bp-phone) {
+      flex-direction: column;
+    }
   }
   &__brandmark {
     display: flex;
@@ -21,15 +27,18 @@
     justify-content: space-between;
     margin-right: 8rem;
     @media only screen and (max-width: $bp-tab-port) {
-      margin-right: 4rem;
+      margin-right: 3rem;
     }
-  }
-  &__logo-box {
-  }
-  &__logo {
+    @media only screen and (max-width: $bp-phone) {
+      align-items: center;
+      margin-right: 0;
+    }
   }
   &__icons {
     display: flex;
+    @media only screen and (max-width: $bp-phone) {
+      margin: 2rem 0;
+    }
   }
   &__icon {
     width: 2rem;
@@ -39,6 +48,9 @@
     transition: fill 0.2s ease;
     &:not(:last-child) {
       margin-right: 1.5rem;
+      @media only screen and (max-width: $bp-phone) {
+        margin-right: 1rem;
+      }
     }
     &:hover {
       fill: $color-primary-2;
@@ -56,6 +68,14 @@
     @media only screen and (max-width: $bp-tab-port) {
       grid-gap: 1rem;
     }
+    @media only screen and (max-width: $bp-phone) {
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-columns: 1fr;
+      margin-right: 0;
+      justify-items: center;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
   }
   &__nav-item {
     color: $color-white;
@@ -70,6 +90,9 @@
   }
   &__note {
     text-align: end;
+    @media only screen and (max-width: $bp-phone) {
+      text-align: center;
+    }
   }
 
   &__copyright {
@@ -83,6 +106,7 @@
     text-align: center;
     color: hsl(240, 5%, 85%);
     background-color: hsl(233, 26%, 24%);
+    line-height: normal;
     a {
       color: hsl(118, 81%, 50%);
     }

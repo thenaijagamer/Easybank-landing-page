@@ -11,7 +11,10 @@
     padding: 6rem 6rem;
   }
   @media only screen and (max-width: $bp-phone) {
-    padding: 3rem 2.5rem;
+    padding: 5rem 3rem;
+  }
+  @media only screen and (max-width: $bp-small-phone) {
+    padding: 4rem 2.5rem;
   }
   &__heading-box {
     width: 55%;
@@ -19,6 +22,10 @@
     @media only screen and (max-width: $bp-tab-port) {
       width: 70%;
       margin-bottom: 5rem;
+      @media only screen and (max-width: $bp-phone) {
+        width: 100%;
+        text-align: center;
+      }
     }
   }
   &__header {
@@ -32,17 +39,23 @@
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-column-gap: 2.2rem;
     grid-row-gap: 4rem;
-    @media only screen and (max-width: $bp-phone) {
+    @media only screen and (max-width: $bp-small-phone) {
       grid-template-columns: 1fr;
     }
   }
 }
 
 .benefit {
+  @media only screen and (max-width: $bp-phone) {
+    text-align: center;
+  }
   &__header {
     margin: 2.5rem 0;
     @media only screen and (max-width: $bp-tab-port) {
       margin: 2rem 0;
+    }
+    @media only screen and (max-width: $bp-phone) {
+      margin: 1rem 0;
     }
   }
   &__message {
