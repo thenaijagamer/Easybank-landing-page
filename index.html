@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1 " />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
@@ -21,6 +21,44 @@
     <!-- Header ---->
     <header class="header">
       <img class="header__logo" src="img/logo.svg" alt="Logo" />
+
+      <!-- Phone nav button functionality -->
+      <div class="header__radio-group">
+        <input
+          type="checkbox"
+          name="size"
+          class="header__radio-input"
+          id="icon"
+        />
+        <label for="icon" class="header__radio-label">
+          <svg class="header__hamburger-icon">
+            <use xlink:href="img/sprite.svg#icon-hamburger"></use>
+          </svg>
+          <svg class="header__close-icon">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </label>
+        <!-- Phone nav ---->
+        <div class="phone">
+          <ul class="phone__nav">
+            <li class="phone__nav-item">
+              <a href="#" class="phone__nav-item-link">Home</a>
+            </li>
+            <li class="phone__nav-item">
+              <a href="#" class="phone__nav-item-link">About</a>
+            </li>
+            <li class="phone__nav-item">
+              <a href="#" class="phone__nav-item-link">Contact</a>
+            </li>
+            <li class="phone__nav-item">
+              <a href="#" class="phone__nav-item-link">Blog</a>
+            </li>
+            <li class="phone__nav-item">
+              <a href="#" class="phone__nav-item-link">Careers</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
       <ul class="header__nav">
         <li class="header__nav-item">
@@ -41,27 +79,6 @@
       </ul>
       <button class="btn header__nav-btn">Request Invite</button>
     </header>
-
-    <!-- Phone nav ---->
-    <div class="phone">
-      <ul class="phone__nav">
-        <li class="phone__nav-item">
-          <a href="#" class="phone__nav-item-link">Home</a>
-        </li>
-        <li class="phone__nav-item">
-          <a href="#" class="phone__nav-item-link">About</a>
-        </li>
-        <li class="phone__nav-item">
-          <a href="#" class="phone__nav-item-link">Contact</a>
-        </li>
-        <li class="phone__nav-item">
-          <a href="#" class="phone__nav-item-link">Blog</a>
-        </li>
-        <li class="phone__nav-item">
-          <a href="#" class="phone__nav-item-link">Careers</a>
-        </li>
-      </ul>
-    </div>
 
     <!-- Main -->
     <main class="main">

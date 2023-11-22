@@ -1,21 +1,23 @@
 .phone {
   display: none;
   @media only screen and (max-width: $bp-phone) {
-    display: block;
     position: fixed;
     top: 6rem;
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 3rem 2.5rem;
+    padding: 3rem 3rem;
     z-index: 10;
-    background-color: rgba($color-text-h, 0.4);
-    display: none;
+    background-image: linear-gradient(
+      to bottom,
+      rgba($color-text-h, 1),
+      rgba($color-text-h, 0.3)
+    );
   }
   &__nav {
     display: flex;
     background-color: $color-white;
-    width: calc(100vw - 5rem);
+    width: calc(100vw - 6rem);
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -24,6 +26,7 @@
   }
   &__nav-item {
     display: inline-block;
+    font-size: 2rem;
     font-weight: 700;
     line-height: normal;
     list-style: none;
