@@ -163,17 +163,18 @@ body {
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0; }
+    left: 0;
+    transition: all 0.1 ease; }
   .header__close-icon {
     opacity: 0; }
   .header__radio-input:checked + .header__radio-label .header__hamburger-icon {
     opacity: 0; }
   .header__radio-input:checked + .header__radio-label .header__close-icon {
     opacity: 1; }
-
-@media only screen and (max-width: 40.625em) {
-  .header__radio-input:checked ~ .phone {
-    display: block; } }
+  @media only screen and (max-width: 40.625em) {
+    .header__radio-input:checked ~ .phone {
+      display: block;
+      opacity: 1; } }
 
 @media only screen and (max-width: 40.625em) {
   .header .header__nav-btn {
@@ -190,7 +191,9 @@ body {
       height: 100vh;
       padding: 3rem 3rem;
       z-index: 10;
-      background-image: linear-gradient(to bottom, #2d314d, rgba(45, 49, 77, 0.3)); } }
+      background-image: linear-gradient(to bottom, #2d314d, rgba(45, 49, 77, 0.3));
+      opacity: 0;
+      transition: opacity 0.2s ease-in; } }
   .phone__nav {
     display: flex;
     background-color: white;
@@ -199,7 +202,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 3.5rem 0;
-    border-radius: 3px; }
+    border-radius: 3px;
+    animation: slide-in-elliptic-top-bck 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
   .phone__nav-item {
     display: inline-block;
     font-size: 2rem;
@@ -214,6 +218,16 @@ body {
     font-size: 1.6rem; }
   .phone__nav-item-link:active {
     color: #2d314d; }
+
+@keyframes slide-in-elliptic-top-bck {
+  0% {
+    transform: translateY(-600px) rotateX(30deg) scale(6.5);
+    transform-origin: 50% 200%;
+    opacity: 0; }
+  100% {
+    transform: translateY(0) rotateX(0) scale(1);
+    transform-origin: 50% -500px;
+    opacity: 1; } }
 
 .forward {
   height: 66rem;
