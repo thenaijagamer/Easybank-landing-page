@@ -27,6 +27,7 @@
     border-radius: 3px;
     animation: slide-in-elliptic-top-bck 0.7s
       cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    box-shadow: $shadow-light;
   }
   &__nav-item {
     display: inline-block;

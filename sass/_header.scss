@@ -20,9 +20,6 @@
   @media only screen and (max-width: $bp-phone) {
     padding: 0 2.5rem;
   }
-  &__logo {
-    display: block;
-  }
   &__nav {
     display: flex;
     align-self: stretch;
@@ -59,7 +56,7 @@
     &::after {
       content: "";
       background-image: linear-gradient(
-        to right bottom,
+        to right,
         $color-primary-2,
         $color-primary-3
       );
@@ -112,6 +109,7 @@
     top: 0;
     left: 0;
     transition: all 0.1 ease;
+    fill: $color-text-h;
   }
   &__close-icon {
     opacity: 0;

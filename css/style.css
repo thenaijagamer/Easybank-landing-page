@@ -97,8 +97,6 @@ body {
   @media only screen and (max-width: 40.625em) {
     .header {
       padding: 0 2.5rem; } }
-  .header__logo {
-    display: block; }
   .header__nav {
     display: flex;
     align-self: stretch;
@@ -127,7 +125,7 @@ body {
         font-size: 1.5rem; } }
   .header__nav-item-link::after {
     content: "";
-    background-image: linear-gradient(to right bottom, #31d35c, #2bb7da);
+    background-image: linear-gradient(to right, #31d35c, #2bb7da);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -164,7 +162,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    transition: all 0.1 ease; }
+    transition: all 0.1 ease;
+    fill: #2d314d; }
   .header__close-icon {
     opacity: 0; }
   .header__radio-input:checked + .header__radio-label .header__hamburger-icon {
@@ -203,7 +202,8 @@ body {
     align-items: center;
     padding: 3.5rem 0;
     border-radius: 3px;
-    animation: slide-in-elliptic-top-bck 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+    animation: slide-in-elliptic-top-bck 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
   .phone__nav-item {
     display: inline-block;
     font-size: 2rem;
@@ -270,10 +270,8 @@ body {
       .forward__message {
         padding: 0 2.5rem;
         margin-bottom: 4rem; } }
-  .forward__heading {
-    margin-bottom: 4rem; }
   .forward__text {
-    margin-bottom: 4rem; }
+    margin: 4rem 0; }
   .forward__bg-intro-box {
     position: relative;
     height: 100%;
@@ -426,10 +424,10 @@ body {
       .benefits__heading-box {
         width: 70%;
         margin-bottom: 5rem; } }
-  @media only screen and (max-width: 56.25em) and (max-width: 40.625em) {
-    .benefits__heading-box {
-      width: 100%;
-      text-align: center; } }
+    @media only screen and (max-width: 40.625em) {
+      .benefits__heading-box {
+        width: 100%;
+        text-align: center; } }
   .benefits__header {
     margin-bottom: 3rem; }
     @media only screen and (max-width: 56.25em) {
@@ -516,10 +514,9 @@ body {
     padding: 2rem 2rem; }
   .blog__author {
     font-size: 1.2rem;
-    margin-bottom: 1rem;
     line-height: normal; }
   .blog__header {
-    margin-bottom: 1rem;
+    margin: 1rem 0;
     transition: color 0.2s;
     cursor: pointer;
     line-height: normal; }

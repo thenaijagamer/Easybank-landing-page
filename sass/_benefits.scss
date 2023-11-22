@@ -22,10 +22,10 @@
     @media only screen and (max-width: $bp-tab-port) {
       width: 70%;
       margin-bottom: 5rem;
-      @media only screen and (max-width: $bp-phone) {
-        width: 100%;
-        text-align: center;
-      }
+    }
+    @media only screen and (max-width: $bp-phone) {
+      width: 100%;
+      text-align: center;
     }
   }
   &__header {
