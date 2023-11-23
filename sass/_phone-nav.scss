@@ -28,6 +28,9 @@
     animation: slide-in-elliptic-top-bck 0.7s
       cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     box-shadow: $shadow-light;
+    @media only screen and (max-width: $bp-small-phone) {
+      padding: 2rem 0;
+    }
   }
   &__nav-item {
     display: inline-block;
@@ -37,6 +40,9 @@
     list-style: none;
     &:not(:last-child) {
       margin-bottom: 2.5rem;
+      @media only screen and (max-width: $bp-small-phone) {
+        margin-bottom: 1.5rem;
+      }
     }
   }
 
