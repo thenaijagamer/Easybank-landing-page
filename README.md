@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/thenaijagamer/easybank-landing-page)
-- Live Site URL: [Todo app](https://thenaijagamer.github.io/easybank-landing-page/)
+- Live Site URL: [Easybank landing page](https://thenaijagamer.github.io/easybank-landing-page/)
 
 ---
 
