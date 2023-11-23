@@ -29,15 +29,10 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
----
-
 ### Screenshot
 
-[Include a screenshot of your project here]
 [Desktop](./img/Screenshot-desktop.png)
 [Mobile](./img/Screenshot-mobile.png)
-
----
 
 ### Links
 
@@ -61,19 +56,13 @@ I focused on a variety of skills in this project, including:
 
 Additionally, I employed sprite SVG icons and leveraged entrance animations from animista.net to enhance the project's visual appeal. One unique aspect was implementing the functionality of displaying the navigation bar on phone screen sizes without using JavaScript; instead, I utilized HTML and CSS to achieve this.
 
----
-
 ### What I Learned
 
 During this project, I gained insights into manipulating SVG icons into a sprite file, expanding my knowledge within the realm of SVG optimization and usage in web development.
 
----
-
 ### Continued Development
 
 In future iterations, I plan to enhance the project further by incorporating accessibility features and advanced animations using JavaScript for advanced DOM manipulation.
-
----
 
 ### Useful Resources
 
