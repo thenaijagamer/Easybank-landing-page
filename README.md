@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Screenshot
 
-[Desktop](./img/Screenshot-desktop.png)
-[Mobile](./img/Screenshot-mobile.png)
+- [Desktop](./img/Screenshot-desktop.png)
+- [Mobile](./img/Screenshot-mobile.png)
 
 ### Links
 
